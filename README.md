@@ -1,8 +1,8 @@
-# filetype [![GoDoc](https://godoc.org/github.com/h2non/filetype?status.svg)](https://godoc.org/github.com/h2non/filetype) [![Go Version](https://img.shields.io/badge/go-v1.0+-green.svg?style=flat)](https://github.com/h2non/gentleman)
+# filetype [![GoDoc](https://godoc.org/github.com/maohieng/filetype?status.svg)](https://godoc.org/github.com/maohieng/filetype) [![Go Version](https://img.shields.io/badge/go-v1.0+-green.svg?style=flat)](https://github.com/maohieng/gentleman)
 
 Small and dependency free [Go](https://golang.org) package to infer file and MIME type checking the [magic numbers](<https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files>) signature.
 
-For SVG file type checking, see [go-is-svg](https://github.com/h2non/go-is-svg) package. Python port: [filetype.py](https://github.com/h2non/filetype.py).
+For SVG file type checking, see [go-is-svg](https://github.com/maohieng/go-is-svg) package. Python port: [filetype.py](https://github.com/maohieng/filetype.py).
 
 ## Features
 
@@ -21,17 +21,17 @@ For SVG file type checking, see [go-is-svg](https://github.com/h2non/go-is-svg) 
 ## Installation
 
 ```bash
-go get github.com/h2non/filetype
+go get github.com/maohieng/filetype
 ```
 
 ## API
 
-See [Godoc](https://godoc.org/github.com/h2non/filetype) reference.
+See [Godoc](https://godoc.org/github.com/maohieng/filetype) reference.
 
 ### Subpackages
 
-- [`github.com/h2non/filetype/types`](https://godoc.org/github.com/h2non/filetype/types)
-- [`github.com/h2non/filetype/matchers`](https://godoc.org/github.com/h2non/filetype/matchers)
+- [`github.com/maohieng/filetype/types`](https://godoc.org/github.com/maohieng/filetype/types)
+- [`github.com/maohieng/filetype/matchers`](https://godoc.org/github.com/maohieng/filetype/matchers)
 
 ## Examples
 
@@ -44,7 +44,7 @@ import (
   "fmt"
   "io/ioutil"
 
-  "github.com/h2non/filetype"
+  "github.com/maohieng/filetype"
 )
 
 func main() {
@@ -69,7 +69,7 @@ import (
   "fmt"
   "io/ioutil"
 
-  "github.com/h2non/filetype"
+  "github.com/maohieng/filetype"
 )
 
 func main() {
@@ -91,7 +91,7 @@ package main
 import (
   "fmt"
 
-  "github.com/h2non/filetype"
+  "github.com/maohieng/filetype"
 )
 
 func main() {
@@ -120,7 +120,7 @@ import (
   "fmt"
   "os"
 
-  "github.com/h2non/filetype"
+  "github.com/maohieng/filetype"
 )
 
 func main() {
@@ -147,7 +147,7 @@ package main
 import (
   "fmt"
 
-  "github.com/h2non/filetype"
+  "github.com/maohieng/filetype"
 )
 
 var fooType = filetype.NewType("foo", "foo/foo")
@@ -278,7 +278,7 @@ func main() {
 
 ## Benchmarks
 
-Measured using [real files](https://github.com/h2non/filetype/tree/master/fixtures).
+Measured using [real files](https://github.com/maohieng/filetype/tree/master/fixtures).
 
 Environment: OSX x64 i7 2.7 Ghz
 
